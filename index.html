@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oia o Bonde</title>
+    <link rel="stylesheet" href="./src/css/variaveis.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/fontes.css" />
+    <link rel="stylesheet" href="./src/css/animacoes.css" />
+    <link rel="stylesheet" href="./src/css/estilos.css" />
+    <link rel="stylesheet" href="./src/css/responsivo.css" />
+    <!-- a ordem da linkagem faz diferença, porque é lido de cima pra baixo
+    ou seja, se uma fonte é usada no arquivo estilos.css ela precisa já ter sido lida, ou não vai funcionar -->
+</head>
+
+<body>
+    <main>
+        <header class="cabecalho">
+            <h1 class="titulo">Card Selector</h1>
+        </header>
+        <div class="selecao-de-personagens">
+            <div class="personagem-grande personagem-jogador-1">
+                <img src="./src/imagens/meldeneth.png" alt="Personagem selecionado do jogador 1" id="personagem-jogador-1">
+                <div class="nome">
+                    <h2 id="nome-jogador-1">Meldeneth</h2>
+                </div>
+            </div> <!-- personagem grande jogador 1 -->
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="meldeneth" data-name="Meldeneth">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/meldeneth.jpeg" alt="Personagem da Meldeneth">
+                </li>
+                <li class="personagem" id="aldrorius" data-name="Aldrorius">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/aldrorius.jpeg" alt="Personagem do Aldrorius">
+                </li>
+                <li class="personagem" id="hadesz" data-name="Hadesz">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/hadesz.jpeg" alt="Personagem do Hadesz">
+                </li>
+                <li class="personagem" id="kithiara" data-name="Kithiara">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/kithiara.jpeg" alt="Personagem do Kithiara">
+                </li>
+                <li class="personagem" id="leonnidaz" data-name="Leonnidaz">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/leonnidaz.jpeg" alt="Personagem do Leonnidaz">
+                </li>
+                <li class="personagem jogador-2-selecionado" id="edyrthalion" data-name="Edyrthalion">
+                    <span class="tag">2P</span>
+                    <img src="./src/imagens/edyrthalion.jpeg" alt="Personagem do Edyrthalion">
+                </li>
+                <li class="personagem" id="lugan" data-name="Lugan">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/lugan.jpeg" alt="Personagem do Lugan">
+                </li>
+                <li class="personagem" id="stevefuu" data-name="Stevefuu">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/stevefuu.jpeg" alt="Personagem do Stevefuu">
+                </li>
+                <li class="personagem" id="ultimecia" data-name="Ultimecia">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/ultimecia.jpeg" alt="Personagem da Ultimecia">
+                </li>
+            </ul>
+            <div class="personagem-grande personagem-jogador-2">
+                <img src="./src/imagens/edyrthalion.png" alt="Personagem selecionado do jogador 2" id="personagem-jogador-2">
+                <div class="nome">
+                    <h2>Edyrthalion</h2>
+                </div>
+            </div> <!-- personagem grande jogador 2 -->
+        </div> <!-- selecao de personagem -->
+    </main>
+    <script src="./src/js/index.js"></script>
+    <!-- como ele carrega de cima pra baixo, se colocar o script em cima, ele pode tentar carregar o js antes msm de carregar os elementos que o js vai usar -->
+</body>
+
+</html>
